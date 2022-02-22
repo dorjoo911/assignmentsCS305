@@ -185,3 +185,7 @@ Input        Output
 // console.log(sumOfNumbers("abcd12efg3"));
 // console.log(sumOfNumbers("w1res0urc2"));
 // console.log(sumOfNumbers("wresurc8"));
+
+const prompt = require("prompt-sync")();
+let name = prompt("What is your name?: ");
+console.log("Hi ", name);
