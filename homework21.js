@@ -79,31 +79,65 @@ compounds interest monthly. Prompt the user for the
 
 /* #4
 Write code to print the number patterns on the console
-12345
-12345
-12345
-12345
-12345
+// 12345
+// 12345
+// 12345
+// 12345
+// 12345
 // 1
 // 22
 // 333
 // 4444
 // 55555
-55555
-4444
-333
-22
-1
+// 55555
+// 4444
+// 333
+// 22
+// 1
 */
 
-let n = 5; // height of pattern
-let string = "";
-// External loop
-for (let i = 1; i <= n; i++) {
-  // Internal loop
-  for (let j = 1; j <= i; j++) {
-    string += i;
-  }
-  string += "\n";
-}
-console.log(string);
+// let n = 5; // height of pattern
+// let string = "";
+// // External loop
+// for (let i = 1; i <= n; i++) {
+//   // Internal loop
+//   for (let j = 1; j <= i; j++) {
+//     string += i;
+//   }
+//   string += "\n";
+// }
+// console.log(string);
+// let n = 5; // height of pattern
+// let string = "";
+// // External loop
+// for (let i = 1; i <= n; i++) {
+//   for (let j = 1; j <= n; j++) {
+//     string += j;
+//   }
+//   string += "\n";
+// }
+// console.log(string);
+// let n = 5; // height of pattern
+// let string = "";
+// // External loop
+// for (let i = 1; i <= n; i++) {
+//   for (let j = 1; j <= n - i + 1; j++) {
+//     string += n - i + 1;
+//   }
+//   string += "\n";
+// }
+// console.log(string);
+
+/* #5
+Cost of House Down Payment
+Make a defining table and then write a program that calculates 
+down payment for a home loan based
+on following rules. Your program should prompt for the cost 
+and write the down payment amount to
+the console.
+Cost of House Down Payment
+$0    to less than 50K        5% of the cost
+$50K  to less than 100K       $1000 + 10% of (cost - $50K)
+$100K to less than 200K       $2000 + 15% of (cost - $100K)
+$200K and above               $5000 + 10% of (cost - $200K)
+*/
