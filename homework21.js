@@ -84,27 +84,26 @@ Write code to print the number patterns on the console
 12345
 12345
 12345
-1
-22
-333
-4444
-55555
+// 1
+// 22
+// 333
+// 4444
+// 55555
 55555
 4444
 333
 22
 1
 */
-function patterns() {
-  let n = 5; // height of pattern
-  let string = "";
-  // External loop
-  for (let i = 1; i <= n; i++) {
-    // Internal loop
-    for (let j = 1; j <= i; j++) {
-      string += i;
-    }
-    string += "\n";
+
+let n = 5; // height of pattern
+let string = "";
+// External loop
+for (let i = 1; i <= n; i++) {
+  // Internal loop
+  for (let j = 1; j <= i; j++) {
+    string += i;
   }
-  console.log(string);
+  string += "\n";
 }
+console.log(string);
