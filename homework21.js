@@ -176,5 +176,6 @@ function sumOfNumbers(dstr) {
   return dsum;
 }
 
-console.log(sum_digits_from_string("abcd12efg9"));
-console.log(sum_digits_from_string("w3resource"));
+console.log(sumOfNumbers("abcd12efg3"));
+console.log(sumOfNumbers("w1res0urc2"));
+console.log(sumOfNumbers("wresurc8"));
