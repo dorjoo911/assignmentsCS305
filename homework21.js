@@ -164,18 +164,24 @@ Input        Output
 102    -     3
 8      -     8
 */
-// const prompt = require("prompt-sync")(); //My prompt is not working!!!
-// let sum = prompt(num);                   //My prompt is not working!!!
-function sumOfNumbers(dstr) {
-  let dsum = 0;
+// "use strict";
 
-  for (let i = 0; i < dstr.length; i++) {
-    if (/[0-9]/.test(dstr[i])) dsum += parseInt(dstr[i]);
-    // test() does return boolean. existing string has digits?
-  }
-  return dsum;
-}
+// const ps = require("prompt-sync")(); //My prompt is not working!!!
+// const prompt = ps({ sigint: true });
 
-console.log(sumOfNumbers("abcd12efg3"));
-console.log(sumOfNumbers("w1res0urc2"));
-console.log(sumOfNumbers("wresurc8"));
+// let name = prompt("enter your name : "); //My prompt is not working!!!
+// console.log(`Hello ${name}`);
+
+// function sumOfNumbers(dstr) {
+//   let dsum = 0;
+
+//   for (let i = 0; i < dstr.length; i++) {
+//     if (/[0-9]/.test(dstr[i])) dsum += parseInt(dstr[i]);
+//     // test() does return boolean. existing string has digits?
+//   }
+//   return dsum;
+// }
+
+// console.log(sumOfNumbers("abcd12efg3"));
+// console.log(sumOfNumbers("w1res0urc2"));
+// console.log(sumOfNumbers("wresurc8"));
