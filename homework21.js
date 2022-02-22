@@ -141,3 +141,40 @@ $50K  to less than 100K       $1000 + 10% of (cost - $50K)
 $100K to less than 200K       $2000 + 15% of (cost - $100K)
 $200K and above               $5000 + 10% of (cost - $200K)
 */
+// function downCal(houseCost) {
+//   let downPayment = 0;
+//   if (houseCost < 50) {
+//     downPayment += houseCost * 0.05;
+//   } else if (houseCost >= 50 && houseCost < 100) {
+//     downPayment += 1 + houseCost * 0.1;
+//   } else if (houseCost >= 100 && houseCost < 200) {
+//     downPayment += 2 + houseCost * 0.15;
+//   } else {
+//     downPayment += 5 + houseCost * 0.1;
+//   }
+//   return downPayment;
+// }
+// console.log(downCal(200));
+
+/* #6
+Write a JavaScript program to prompt for an integer and compute 
+the sum of all the digits
+Input        Output
+123    -     6
+102    -     3
+8      -     8
+*/
+// const prompt = require("prompt-sync")(); //My prompt is not working!!!
+// let sum = prompt(num);                   //My prompt is not working!!!
+function sumOfNumbers(dstr) {
+  let dsum = 0;
+
+  for (let i = 0; i < dstr.length; i++) {
+    if (/[0-9]/.test(dstr[i])) dsum += parseInt(dstr[i]);
+    // test() does return boolean. existing string has digits?
+  }
+  return dsum;
+}
+
+console.log(sum_digits_from_string("abcd12efg9"));
+console.log(sum_digits_from_string("w3resource"));
